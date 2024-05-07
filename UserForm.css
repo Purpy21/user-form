@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background: #f9fafb;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.background .container {
+    background: #fff;
+    margin: 8vw auto;
+    width: calc(100% - 30vw);
+    display: flex;
+    box-shadow: 0px 0px 40px #e9eaeb;
+}
+
+.container > div {
+    width: 50%;
+    position: relative;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+.container > div > img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.container .trans-bg {
+    position: absolute;
+    display: flex;
+    top: 15%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.container .trans-bg img {
+    width: 50px;
+}
+
+.container .trans-bg p {
+    font-family: norse-bold, "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container .credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container .credit p {
+    text-align: center;
+}
+
+.container .credit p, .container .credit a {
+    color: white;
+    font-size: 0.5rem;
+}
+
+.container > form {
+    width: 100%;
+    padding: 40px;
+}
+
+form .heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 40px 0px;
+    font-size: 1.6rem;
+}
+
+form > div:nth-child(2) {
+    width: 100%;
+}
+
+.form-div {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+label {
+    width: 100%;
+    margin: 0px 10px 0px 0px;
+}
+
+input[type='text'], input[type='password'], input[type='email'] {
+    width: 100%;
+    margin: 5px 10px 7px 0px;
+    font-family: inherit;
+    padding: 7px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1.8px solid #E5E7EB;
+}
+
+input[type='text']:focus {
+    border: 1px solid blue;
+    box-shadow: 0px 0px 3px #959797;
+}
+input[type='number']::placeholder {
+    opacity: 0.6;
+}
+
+.invalid {
+    box-shadow: 0px 0px 3px red;
+    color: red;
+}
+
+.invalid-text {
+    color: red;
+    margin: 0;
+    padding: 10px;
+}
+
+button[type='submit'] {
+    background-color: #024a9c;
+    outline: none;
+    margin: 5px 0px 0px 10px;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #959797;
+}
+
+button[type='submit']:hover {
+    background-color: #053368;
+}
+
+form p {
+    margin-left: 10px;
+}
+
+form a {
+    color: #053368;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+

@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/odin-lined.png" type="image/x-icon">
+    <link rel="stylesheet" href="UserForm.css">
+    <title>Sign Up</title>
 </head>
 <body>
-    
+    <div class="background">
+        <div class="container">
+            <div>
+                <div class="trans-bg">
+                    <img src="./images/odin-lined.png" alt="">
+                    <p>ODIN</p>
+                </div>
+                <div class="credit">
+                    <p>
+                        Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </p>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="heading">
+                    sign up to odin!
+                </div>
+                <div>
+                    <div class="form-div">
+                        <label>FIRST NAME<br><input type="text" name="fname" id="name" required></label>
+                        <label>LAST NAME<br><input type="text" name="lname" id="number" required></label>
+                    </div>
+                    <div class="form-div">
+                        <label>EMAIL<br><input type="email" name="email" id="email" required></label>
+                        <label>PHONE NUMBER<br><input type="text" name="number" id="number" pattern="(^(\09)(\d){10}$)" required
+                            placeholder="e.g. 09317870348"></label>
+                    </div>
+                    <div class="form-div">
+                        <label>PASSWORD<br><input type="password" name="pass" id="pass" min="6" required></label>
+                        <label>CONFIRM PASSWORD<br><input type="password" name="confpass" id="confpass" required></label>
+                    </div>
+                    <p class="invalid-text"></p>
+                </div>
+                <button type="submit" id="submitbtn">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="./UserForm.js"></script>
 </body>
 </html>
